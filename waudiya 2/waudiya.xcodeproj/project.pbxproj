@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047B449D28A2263B0067C232 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B449C28A2263B0067C232 /* Cell.swift */; };
+		04A96C26289BA05C001E868B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A96C25289BA05C001E868B /* AppDelegate.swift */; };
+		04A96C28289BA05C001E868B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A96C27289BA05C001E868B /* SceneDelegate.swift */; };
+		04A96C2A289BA05C001E868B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A96C29289BA05C001E868B /* ViewController.swift */; };
+		04A96C2D289BA05C001E868B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A96C2B289BA05C001E868B /* Main.storyboard */; };
+		04A96C2F289BA05D001E868B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A96C2E289BA05D001E868B /* Assets.xcassets */; };
+		04A96C32289BA05D001E868B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A96C30289BA05D001E868B /* LaunchScreen.storyboard */; };
+		04BB1E1228A13BFE0050022F /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB1E1128A13BFE0050022F /* LocationSearchViewController.swift */; };
+		04CDC82A289E37B700B8846A /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDC829289E37B700B8846A /* Promise.swift */; };
+		04CDC82C289E3C2500B8846A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDC82B289E3C2500B8846A /* CustomCell.swift */; };
+		04CDC830289E504100B8846A /* WriteCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDC82F289E504100B8846A /* WriteCellViewController.swift */; };
+		8CF664F18225ADAB23FB34F7 /* Pods_waudiya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066848345FCA829075E70CC6 /* Pods_waudiya.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		047B449C28A2263B0067C232 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		04A96C22289BA05C001E868B /* waudiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waudiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A96C25289BA05C001E868B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A96C27289BA05C001E868B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04A96C29289BA05C001E868B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A96C2C289BA05C001E868B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A96C2E289BA05D001E868B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A96C31289BA05D001E868B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A96C33289BA05D001E868B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BB1E1128A13BFE0050022F /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
+		04CDC829289E37B700B8846A /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		04CDC82B289E3C2500B8846A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		04CDC82F289E504100B8846A /* WriteCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCellViewController.swift; sourceTree = "<group>"; };
+		066848345FCA829075E70CC6 /* Pods_waudiya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waudiya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6383FEEA50658785083ABF32 /* Pods-waudiya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waudiya.release.xcconfig"; path = "Target Support Files/Pods-waudiya/Pods-waudiya.release.xcconfig"; sourceTree = "<group>"; };
+		E89D45E966A2C93A5ACB49BC /* Pods-waudiya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waudiya.debug.xcconfig"; path = "Target Support Files/Pods-waudiya/Pods-waudiya.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A96C1F289BA05C001E868B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF664F18225ADAB23FB34F7 /* Pods_waudiya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A96C19289BA05C001E868B = {
+			isa = PBXGroup;
+			children = (
+				04A96C24289BA05C001E868B /* waudiya */,
+				04A96C23289BA05C001E868B /* Products */,
+				92AC183E81519FA7D9B33362 /* Pods */,
+				5693EC4D75E5E1FA76C97EA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04A96C23289BA05C001E868B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A96C22289BA05C001E868B /* waudiya.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A96C24289BA05C001E868B /* waudiya */ = {
+			isa = PBXGroup;
+			children = (
+				04A96C25289BA05C001E868B /* AppDelegate.swift */,
+				04A96C27289BA05C001E868B /* SceneDelegate.swift */,
+				04A96C29289BA05C001E868B /* ViewController.swift */,
+				04A96C2B289BA05C001E868B /* Main.storyboard */,
+				04A96C2E289BA05D001E868B /* Assets.xcassets */,
+				04A96C30289BA05D001E868B /* LaunchScreen.storyboard */,
+				04A96C33289BA05D001E868B /* Info.plist */,
+				04CDC829289E37B700B8846A /* Promise.swift */,
+				04CDC82B289E3C2500B8846A /* CustomCell.swift */,
+				04CDC82F289E504100B8846A /* WriteCellViewController.swift */,
+				04BB1E1128A13BFE0050022F /* LocationSearchViewController.swift */,
+				047B449C28A2263B0067C232 /* Cell.swift */,
+			);
+			path = waudiya;
+			sourceTree = "<group>";
+		};
+		5693EC4D75E5E1FA76C97EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				066848345FCA829075E70CC6 /* Pods_waudiya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92AC183E81519FA7D9B33362 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E89D45E966A2C93A5ACB49BC /* Pods-waudiya.debug.xcconfig */,
+				6383FEEA50658785083ABF32 /* Pods-waudiya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A96C21289BA05C001E868B /* waudiya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A96C36289BA05D001E868B /* Build configuration list for PBXNativeTarget "waudiya" */;
+			buildPhases = (
+				32908314518126DFBFA72B30 /* [CP] Check Pods Manifest.lock */,
+				04A96C1E289BA05C001E868B /* Sources */,
+				04A96C1F289BA05C001E868B /* Frameworks */,
+				04A96C20289BA05C001E868B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = waudiya;
+			productName = waudiya;
+			productReference = 04A96C22289BA05C001E868B /* waudiya.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A96C1A289BA05C001E868B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					04A96C21289BA05C001E868B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 04A96C1D289BA05C001E868B /* Build configuration list for PBXProject "waudiya" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04A96C19289BA05C001E868B;
+			productRefGroup = 04A96C23289BA05C001E868B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A96C21289BA05C001E868B /* waudiya */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A96C20289BA05C001E868B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A96C32289BA05D001E868B /* LaunchScreen.storyboard in Resources */,
+				04A96C2F289BA05D001E868B /* Assets.xcassets in Resources */,
+				04A96C2D289BA05C001E868B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32908314518126DFBFA72B30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-waudiya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A96C1E289BA05C001E868B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A96C2A289BA05C001E868B /* ViewController.swift in Sources */,
+				04A96C26289BA05C001E868B /* AppDelegate.swift in Sources */,
+				04BB1E1228A13BFE0050022F /* LocationSearchViewController.swift in Sources */,
+				04CDC82C289E3C2500B8846A /* CustomCell.swift in Sources */,
+				047B449D28A2263B0067C232 /* Cell.swift in Sources */,
+				04A96C28289BA05C001E868B /* SceneDelegate.swift in Sources */,
+				04CDC830289E504100B8846A /* WriteCellViewController.swift in Sources */,
+				04CDC82A289E37B700B8846A /* Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04A96C2B289BA05C001E868B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A96C2C289BA05C001E868B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04A96C30289BA05D001E868B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A96C31289BA05D001E868B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A96C34289BA05D001E868B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04A96C35289BA05D001E868B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A96C37289BA05D001E868B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89D45E966A2C93A5ACB49BC /* Pods-waudiya.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WC2AB75W42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = waudiya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jinyong-swiftstudy.waudiya";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A96C38289BA05D001E868B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6383FEEA50658785083ABF32 /* Pods-waudiya.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WC2AB75W42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = waudiya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jinyong-swiftstudy.waudiya";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A96C1D289BA05C001E868B /* Build configuration list for PBXProject "waudiya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A96C34289BA05D001E868B /* Debug */,
+				04A96C35289BA05D001E868B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A96C36289BA05D001E868B /* Build configuration list for PBXNativeTarget "waudiya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A96C37289BA05D001E868B /* Debug */,
+				04A96C38289BA05D001E868B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04A96C1A289BA05C001E868B /* Project object */;
+}
