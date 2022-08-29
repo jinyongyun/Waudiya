@@ -1,16 +1,16 @@
 # Waudiya
 워디여 앱
 
-###진행상황###
+### 진행상황
 
 
-##만든 과정##
+## 만든과정
 
 main.storyboard에서 인터페이스 구성
 
 ![스크린샷 2022-08-27 오후 3 31 12](https://user-images.githubusercontent.com/102133961/187018113-cb225477-1f61-4dd4-be44-c02f83e51645.jpg)
 
-##기능상세##
+## 기능상세
 
 사용자가 지정한 위치 인근에 도달할 시 알람 또는 진동
 
@@ -20,7 +20,10 @@ main.storyboard에서 인터페이스 구성
 
 :: 정확한 위치 상세 등록이 불가능해서, MapKit를 이용해 핀으로 위치를 직접 지정할 수 있는 네비게이션을 만들 예정
 
-##위치검색서비스 코드##
+## 위치검색서비스 코드
+
+<pre>
+<code>
 
 import UIKit
 import MapKit
@@ -182,7 +185,8 @@ extension LocationSearchViewController: UITableViewDataSource {
     
     
 }
-
+</code>
+</pre>
 
 구현하느라 진땀 뺏다.
 
@@ -194,3 +198,25 @@ extension LocationSearchViewController: UITableViewDataSource {
 
 그래서 뷰 연계 절차를 옵저버를 이용한 방식으로 바꿨더니 해결됐다.
 
+(2022.8.29)
+사용자 로컬 Notification을 설정하기 위해 관련 내용 공부
+
+# UNNotificationRequest
+이 UNNotificationRequest를 작성하려면 세가지 내용이 필수적으로 필요하다
+
+먼저
+Identifier , 각각의 요청을 구분할 수 있는 아이디를 적어야 하고 (보통 고유한 값인 UUID 등을 입력)
+UNMutableNotificationContent, 즉 알림에 표시될 내용을 정의한다.
+마지막으로 trigger가 있는데
+trigger 즉 방아쇠라는 말에서 알 수 있듯이, 이 알람이 어떤 기준에서 전해질건지 선언하는 일종의 조건을 걸어주는 부분이다.
+  -UNCalendarNotificationTrigger
+  -UNTimeIntervalNotificationTrigger
+  -UNLocationNotificationTrigger
+  이 세가지가 있다.
+  
+  이 세가지 조건을 모두 만족하면 Request객체를 생성하기 위한 모든 조건이 갖추어진 것이다.
+  이렇게 잘 만들어진 Request객체를 UNNotificationCenter로 보내야한다.
+  이후 이 UNNorificationCenter에 차곡차곡 쌓인 Request들은 Center에 잘 보관되고 있다가
+  어떤 적정한 순간에 (우리가 설정한 trigger에 맞게) 탕! 하고 보내진다
+  
+  
