@@ -220,3 +220,69 @@ trigger 즉 방아쇠라는 말에서 알 수 있듯이, 이 알람이 어떤 �
   어떤 적정한 순간에 (우리가 설정한 trigger에 맞게) 탕! 하고 보내진다
   
   
+  2022.9.3
+  AppDelegate에 
+  
+  NotificationCenter import
+    UNUserNotificationCenter.current().delegate = self
+    와 함께 extension으로 빼준 
+    UNNotificationCenterDelegate작성
+    내부엔 
+    <pre>
+    <code>
+        func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+         completionHandler([.banner, .list, .badge, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
+  
+   </code>
+   </pre>
+   
+   그다음 배너를 받기 위해, 사용자의 허용을 받을 필요가 있는데
+   
+   사용자의 승인을 받는 코드를 추가한다
+   
+   UNNotificationCenter.swift 파일 추가 후
+   
+   <pre>
+   <code>
+   
+   import Foundation
+import UserNotifications
+extension UNUserNotificationCenter {
+    func addNotificationRequest(by promise: Promise) {
+        let content = UNMutableNotificationContent()
+        content.title = "지정된 장소: \(promise.locationName)에 거의 도달했습니다🤼‍♂️"
+        content.body = " 야생의 \(promise.locationName)가 나타났다!"
+        content.sound = .default
+        content.badge = 1
+        
+        
+        
+    }
+    
+    
+}
+
+</code>
+</pre>
+
+그리고 앱 실행 시 배지를 삭제해주려고
+
+sceneDelegate에 있는 sceneDidBecomeActive 함수에
+
+<pre>
+<code>
+
+func sceneDidBecomeActive(_ scene: UIScene) {
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
+
+</code>
+</pre>
+
+추가
+ 
